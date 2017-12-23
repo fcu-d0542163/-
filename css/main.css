@@ -1,0 +1,77 @@
+#body{
+    background-color: rgb(231, 240, 248);
+    font-family:Microsoft JhengHei;
+    /*color: rgb(4, 4, 158);*/
+}
+.blook{
+    border-style:solid;
+    width:95%;
+    height: 200px;
+    margin:0px auto;
+}
+#header{
+    
+}
+#toolbar{
+    background-color: rgb(78, 173, 173);
+    width:95%;
+    height: 50px;
+    margin:0px auto;
+   
+}
+.htoolbar{
+    color: rgb(4, 4, 158);
+    font-size: 20px;
+}
+
+#logo_div{
+    width: 35%;
+    height: 45px;
+    line-height: 50px;
+    float: left;
+}
+#lang{
+    width: 15%;
+    float: right;
+    line-height: 50px;
+}
+#link{
+    width: 300px;
+
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    left: 5px;
+}
+/**************沒時區****************/
+.linkblock{
+    width: 70px;
+    height: 100%;
+    line-height: 190px;
+    float: left;
+}
+.pic_nav{
+    height: 175px;
+    line-height: 200px;
+    float: left;
+}
+.wordblock{
+    width: 40%;
+    height: 100%;
+    float: right;
+    
+}
+
+#food{
+    color: black;
+}
+.pic{
+    height: 175px;
+    line-height: 200px;
+
+}
+.foodblock{
+    color:black;
+}
