@@ -1,0 +1,81 @@
+#body{
+    background-color: rgb(231, 240, 248);
+    font-family:Microsoft JhengHei;
+    /*color: rgb(4, 4, 158);*/
+}
+.blook{
+    border-style:solid;
+    width:95%;
+    height: 200px;
+    margin:0px auto;
+}
+#header{
+    
+}
+
+.hide {
+    display: none;
+}
+
+#toolbar{
+    background-color: rgb(78, 173, 173);
+    width:95%;
+    height: 50px;
+    margin:0px auto;
+   
+}
+.htoolbar{
+    color: rgb(4, 4, 158);
+    font-size: 20px;
+    
+}
+.NaviAllign {
+    height:auto;
+}
+
+.position {
+    position:absolute;
+}
+
+#logo_div {
+    position :absolute;
+    /*height: 45px;*/
+    /*line-height: 50px;*/
+    float: left;
+    width: 414px;
+    top: 21px;
+    left: 91px;
+}
+#lang{
+    margin-top:10px;
+    position:page;
+    width: 17%;
+    float: right;
+    height: 26px;
+    left: 900px;
+    margin-right: 0px;
+}
+#link{
+    width: 300px;
+
+}
+
+#logo{
+    height: 50px;
+    left: -99px;
+    right: 449px;
+    top: -9px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+#food{
+    color: black;
+}
+#food_pic{
+    height: 175px;
+    line-height: 200px;
+
+}
+.foodblock{
+    color:black;
+}
