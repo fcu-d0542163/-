@@ -1,0 +1,132 @@
+#body {
+    background-color: rgb(231, 240, 248);
+    font-family: Microsoft JhengHei;
+    /*color: rgb(4, 4, 158);*/
+}
+
+.block {
+    border: 5px solid black;
+    width: 95%;
+    height: 200px;
+    margin: 0px auto;
+}
+
+#header {
+}
+
+#box {
+    height: 200px;
+}
+
+.VideoSize {
+    position: relative;
+    margin-left: 290px;
+    top: 100px;
+}
+
+li.height {
+    height: 30px;
+}
+
+.leftBar {
+    position: fixed;
+    left:0;
+}
+
+    .leftBar ul {
+
+        text-align: center;
+        margin-top: 100px;
+        padding-left: inherit;
+        border: 1px solid black;
+        width: 60px;
+        height: 80px;
+        background-color: burlywood;
+
+    }
+
+a.underline {
+    text-decoration: none;
+}
+
+#toolbar {
+    background-color: rgb(78, 173, 173);
+    width: 95%;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.htoolbar {
+    color: rgb(4, 4, 158);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.NaviAllign {
+    height: auto;
+}
+
+.position {
+    position: absolute;
+}
+
+#logo_div {
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    top: -40px;
+}
+
+#lang {
+    display: inline-block;
+    position: relative;
+    width: 17%;
+    height: 26px;
+    float: right;
+    top: -40px;
+}
+
+#link {
+    width: 300px;
+}
+
+#logo {
+    height: 50px;
+    top: -9px;
+    margin-right: 1000px;
+}
+
+#food {
+    color: black;
+}
+
+#food_pic {
+    height: 175px;
+    line-height: 200px;
+}
+
+.foodblock {
+    color: black;
+}
+
+.cycle-slideshow {
+    margin-left: 100px;
+    position: relative;
+    width: 960px;
+    height: 300px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+    .cycle-slideshow img {
+        position: absolute;
+        margin-left: 100px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.CmdBox {
+    position: relative;
+    left: 300px;
+    top: 150px;
+}
