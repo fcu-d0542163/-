@@ -3,19 +3,32 @@
     font-family:Microsoft JhengHei;
     /*color: rgb(4, 4, 158);*/
 }
+.block_color{
+    background-color: rgb(206, 206, 206);
+    width:95%;
+}
 .blook{
-    border-style:solid;
-    background-color: azure;
+    
+    background-color: rgb(206, 206, 206);
     width:95%;
     height: 200px;
     margin:0px auto;
 }
+.blook2{
+    
+    
+    width:auto;
+    height: 200px;
+    margin:0px auto;
+}
+
 
 #toolbar{
     background-color: rgb(78, 173, 173);
     width:95%;
     height: 50px;
     margin:0px auto;
+    line-height: 50px;
    
 }
 .htoolbar{
