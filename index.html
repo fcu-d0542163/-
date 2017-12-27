@@ -6,9 +6,14 @@
 
     <title>原力與你同在</title>
     <link rel="stylesheet" href="./css/main.css">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script>
         $(window).load(function () {
@@ -23,11 +28,11 @@
             });
         });
     </script>
-
+    
 </head>
 
 <body id="body">
-    <div class = "blook">
+    <div class="blook">
         <ul id="flexiselDemo3">
             <li>
                 <img src="./pic/香腸.jpg" class="pic" />
@@ -44,88 +49,93 @@
             <!-- items mirrored twice, total of 12 -->
         </ul>
     </div>
+    <div class="container-fluid block_color">
 
 
-    <br>
-    <div id="toolbar" name="工具列">
-        <nav id = "log_pic">
-            <img src="./pic/logo.jpg" id="logo">
-        </nav>
-        <nav id="logo_div" class = "htoolbar">
-            <p>
-               
-                <a href="index.html" >回首頁</a> |
-                <a href="food.html" >美食區</a> |
-                <a href="video.html" >影片區</a> |
-                <a href="play.html" >導覽區</a>
-            </p>
 
-        </nav>
+        <br>
+        <div id="toolbar" name="工具列">
+            <nav id="log_pic">
+                <img src="./pic/logo.jpg" id="logo">
+            </nav>
+            <nav id="logo_div" class="htoolbar">
+                <p>
 
-        <nav id="lang" class="htoolbar">
-            <p>
-                <a href="" class="htoolbar">English</a> |
-                <a href="" class="htoolbar">日本語</a>
-            </p>
+                    <a href="index.html">回首頁</a> |
+                    <a href="food.html">美食區</a> |
+                    <a href="video.html">影片區</a> |
+                    <a href="play.html">導覽區</a>
+                </p>
 
-        </nav>
+            </nav>
 
+            <nav id="lang" class="htoolbar">
+                <p>
+                    <a href="" class="htoolbar">English</a> |
+                    <a href="" class="htoolbar">日本語</a>
+                </p>
+
+            </nav>
+
+        </div>
+        <br>
+
+        <div id="food" class="blook2 col-sm-12" name="美食區方塊">
+
+            <div class="col-sm-1 linkblock col-xs-4">
+                <a href="food.html" class="blackword" name="美食區連結">美食區</a>
+            </div>
+
+            <div class="col-sm-5 pic_nav col-xs-8">
+                <a href="food.html">
+                    <img src="./pic/竹筒飯.jpg" class="pic">
+                </a>
+            </div>
+
+            <div class="col-sm-6 wordblock col-xs-12">
+                <p class="word">
+                    <h2>美食區</h2>
+                    竹筒飯，是原住p民相傳下來的慶典活動米食料理，取孟宗竹或是桂竹 ，把橫截一 端竹筒開口，裡面放白米，然後加清水、香料等，開口 端再密封起來，放在炭火的上方，熟了就可以食用，而且聞起來具有獨特竹香味。
+                </p>
+            </div>
+
+        </div>
+        <br><hr>
+        <div id="video" class="blook2 col-sm-12" name="影片區方塊">
+            <div class="linkblock col-sm-1 col-xs-4">
+                <a href="video.html" class="blackword">影片區</a>
+            </div>
+            <div class="pic_nav col-sm-5 col-xs-8">
+                <a href="video.html">
+                    <img src="./pic/香腸.jpg" class="pic">
+                </a>
+            </div>
+            <div class="wordblock col-sm-6 col-xs-12">
+                <p>
+                    <h2>影片區</h2>
+                    簡單來說就是各種影片喔!
+                </p>
+            </div>
+        </div>
+        <br><hr>
+        <div id="play" class="blook2 col-sm-12" name="導覽區">
+            <div class="linkblock col-sm-1 col-xs-4">
+                <a href="play.html" class="blackword">導覽區</a>
+            </div>
+            <div class="pic_nav col-sm-5 col-xs-8">
+                <a href="play.html">
+                    <img src="./pic/南投.jpg" class="pic">
+                </a>
+            </div>
+            <div class="wordblock col-sm-6 col-xs-12">
+                <p>
+                    <h2>導覽區</h2>
+                    各種旅遊發的介紹喔!
+                </p>
+            </div>
+        </div>
     </div>
-    <br>
 
-    <div id="food" class="blook" name="美食區方塊">
-        <nav class="linkblock">
-            <a href="food.html" class="blackword" name="美食區連結">美食區</a>
-        </nav>
-
-        <nav class="pic_nav">
-            <a href="food.html">
-                <img src="./pic/竹筒飯.jpg" class="pic">
-            </a>
-        </nav>
-
-        <nav class="wordblock">
-            <p class="word">
-                <h2>美食區</h2>
-                竹筒飯，是原住p民相傳下來的慶典活動米食料理，取孟宗竹或是桂竹 ，把橫截一 端竹筒開口，裡面放白米，然後加清水、香料等，開口 端再密封起來，放在炭火的上方，熟了就可以食用，而且聞起來具有獨特竹香味。
-            </p>
-        </nav>
-
-    </div>
-    <br>
-    <div id="video" class="blook" name="影片區方塊">
-        <Nav class="linkblock">
-            <a href="video.html" class="blackword">影片區</a>
-        </Nav>
-        <nav class="pic_nav">
-            <a href="video.html">
-                <img src="./pic/香腸.jpg" class="pic">
-            </a>
-        </nav>
-        <nav class="wordblock">
-            <p>
-                <h2>影片區</h2>
-                簡單來說就是各種影片喔!
-            </p>
-        </nav>
-    </div>
-    <br>
-    <div id="play" class="blook" name="導覽區">
-        <Nav class="linkblock">
-            <a href="play.html" class="blackword">導覽區</a>
-        </Nav>
-        <nav class="pic_nav">
-            <a href="play.html">
-                <img src="./pic/南投.jpg" class="pic">
-            </a>
-        </nav>
-        <nav class="wordblock">
-            <p>
-                <h2>導覽區</h2>
-                各種旅遊發的介紹喔!
-            </p>
-        </nav>
-    </div>
 
 
 
