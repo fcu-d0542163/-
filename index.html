@@ -28,7 +28,7 @@
             });
         });
     </script>
-    
+
 </head>
 
 <body id="body">
@@ -101,7 +101,8 @@
             </div>
 
         </div>
-        <br><hr>
+        <br>
+        <hr>
         <div id="video" class="blook2 col-sm-12" name="影片區方塊">
             <div class="linkblock col-sm-1 col-xs-4">
                 <a href="video.html" class="blackword">影片區</a>
@@ -118,7 +119,8 @@
                 </p>
             </div>
         </div>
-        <br><hr>
+        <br>
+        <hr>
         <div id="play" class="blook2 col-sm-12" name="導覽區">
             <div class="linkblock col-sm-1 col-xs-4">
                 <a href="play.html" class="blackword">導覽區</a>
@@ -137,34 +139,66 @@
         </div>
     </div>
 
-    <hr >
+    <hr>
 
-    <!--「日期特效-文字時鐘」程式碼的開始 --> 
+    <div id="aboutus" class="">
+        <div id="us" class="col-sm-6 col-xs-12 block_color">
+            <h3>關於我們</h3>
+            <p>
+                一群在逢甲做期末專題的大學生
+            </p>
+            <p>聯絡我們: theforce@withyou.com </p>
+        </div>
+        <div id="p1" class="col-sm-3 col-xs-6 block_color">
+            <h4>D0XXXXXX</h4>
 
-<script language="JavaScript"> 
-    <!--  
-    document.write('<div align="center"><font size="2">'); 
-    document.write("<span id='clock'></span>"); 
-    var now,hours,minutes,seconds,timeValue; 
-    function showtime(){ 
-    now = new Date(); 
-    hours = now.getHours(); 
-    minutes = now.getMinutes(); 
-    seconds = now.getSeconds(); 
-    timeValue = (hours >= 12) ? "PM " : "AM "; 
-    timeValue += ((hours > 12) ? hours - 12 : hours) + " :"; 
-    timeValue += ((minutes < 10) ? " 0" : " ") + minutes + " :"; 
-    timeValue += ((seconds < 10) ? " 0" : " ") + seconds + " s"; 
-    clock.innerHTML = timeValue; 
-    setTimeout("showtime()",100); 
-    } 
-    showtime(); 
-    document.write('</font></div>');
+        </div>
+        <div id="p2" class="col-sm-3 col-xs-6 block_color">
+            <h4>D0XXXXXX</h4>
+        </div>
+        <div id="p3" class="col-sm-3 col-xs-6 block_color">
+            <h4>D0XXXXXX</h4>
+        </div>
+        <div id="p4" class="col-sm-3 col-xs-6 block_color" name="d0248282">
+            <h4>YYYCCC</h4>
+            <p>
+                <h5>
+                    關於我
+                </h5>
+                <p>想辦法湊學分畢業的大學生QQ</p>
+
+            </p>
+        </div>
+        
+        
+    </div>
+    <br>
+    <!--「日期特效-文字時鐘」程式碼的開始 -->
+
+    <script language="JavaScript"> 
+    <!--
+            document.write('<div align="center"><font size="2">');
+        document.write("<span id='clock'></span>");
+        var now, hours, minutes, seconds, timeValue;
+        function showtime() {
+            now = new Date();
+            hours = now.getHours();
+            minutes = now.getMinutes();
+            seconds = now.getSeconds();
+            timeValue = (hours >= 12) ? "PM " : "AM ";
+            timeValue += ((hours > 12) ? hours - 12 : hours) + " :";
+            timeValue += ((minutes < 10) ? " 0" : " ") + minutes + " :";
+            timeValue += ((seconds < 10) ? " 0" : " ") + seconds + " s";
+            clock.innerHTML = timeValue;
+            setTimeout("showtime()", 100);
+        }
+        showtime();
+        document.write('</font></div>');
     //--> 
     </script>
-    <hr >
-    
-    <!--「日期特效-文字時鐘」程式碼的結束 --> 
+    <hr>
+
+    <!--「日期特效-文字時鐘」程式碼的結束 -->
 </body>
 
 </html>
