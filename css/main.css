@@ -11,7 +11,7 @@
     
     background-color: rgb(206, 206, 206);
     width:95%;
-    height: 250px;
+    height: 200px;
     margin:0px auto;
 }
 .blook2{
@@ -20,17 +20,6 @@
     width:auto;
     height: 200px;
     margin:0px auto;
-}
-#aboutus{
-    background-color: rgb(206, 206, 206);
-    width:95%;
-    height: 200px;
-    margin:0px auto;
-}
-#us{
-    position: relative;
-    
-    
 }
 
 
