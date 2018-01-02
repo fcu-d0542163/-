@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="js/slideMenu.js"></script>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
@@ -83,16 +83,15 @@
 
         <br>
         <br>
-        <div>
-            <ul class="menuBlock">
-                <li><a href="">烹調</a></li>
-                <li><a href="">風景</a></li>
-                <li><a href=""></a></li>
-                
-
-            </ul>
-
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">烹調</a>
+            <a href="#">風景</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
         </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
         <div id="play" class="blook2 col-sm-12" name="影片區">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntr-mUvOuoc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
