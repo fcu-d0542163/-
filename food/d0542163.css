@@ -1,4 +1,4 @@
-#body{
+body{
     background-color: rgb(231, 240, 248);
     font-family:Microsoft JhengHei;
     /*color: rgb(4, 4, 158);*/
@@ -51,6 +51,7 @@
     left: 91px;
     display:  block;
 	margin:auto;
+	font-family:Microsoft JhengHei;
 }
 
 #toright {
