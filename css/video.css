@@ -49,10 +49,10 @@
     opacity: 0.9;
     height: 500px;
     width: 0;
-    position: fixed;
+    position: relative;
     z-index: 1;
-    top: 100px;
-    left: 0;
+    top: -102px;
+    left: -30px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -88,6 +88,9 @@
         .sidenav a {
             font-size: 18px;
         }
+}
+.blook2 .sidenav {
+    display: inline-block;
 }
 
 #toolbar {
