@@ -46,6 +46,7 @@
 
 
 .sidenav {
+    opacity: 0.9;
     height: 500px;
     width: 0;
     position: fixed;
