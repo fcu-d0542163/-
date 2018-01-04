@@ -147,7 +147,7 @@ ul.comments-holder-ul {
 ul.comments-holder-ul li.comment-holder {
 
 
-    transition: border-color .30s;
+    transition: border-color .20s ease-in-out;
     position: relative;
     list-style-type: none;
     background: #fffff5;
@@ -160,6 +160,7 @@ ul.comments-holder-ul li.comment-holder {
 
 ul.comments-holder-ul li.comment-holder:hover {
     border: 1px solid black;
+    transition: none;
 }
 
 ul.comments-holder-ul li.comment-holder:hover {
