@@ -145,6 +145,7 @@ ul.comments-holder-ul {
 }
 
 ul.comments-holder-ul li.comment-holder {
+    position: relative;
     list-style-type: none;
     background: #fffff5;
     height: auto;
@@ -190,6 +191,38 @@ ul.comments-holder-ul li.comment-holder .comment-text {
 
 .comment-body {
     width: auto;
+}
+
+.comment-buttons-holder {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 20px;
+}
+
+.comment-buttons-holder ul {
+    display: none;
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.comment-buttons-holder ul li {
+    float: right;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 17px;
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+.comment-buttons-holder ul li:hover{
+    color: white;
+    background: black;
 }
 
 .blook2 .sidenav {
