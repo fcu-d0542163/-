@@ -101,6 +101,8 @@
 }
 
 .page-data {
+    font-size: larger;
+    font-weight: bold;
     width: auto;
     height: 30px;
     color: #666;
@@ -182,7 +184,8 @@ ul.comments-holder-ul li.comment-holder .comment-text {
     display: block;
     width: auto;
     font-size: 11px;
-    margin: 0 0 0 75px;
+    margin: 0 10px 5px 75px;
+    word-wrap: normal;
 }
 
 .comment-body {
