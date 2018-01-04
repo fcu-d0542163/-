@@ -116,6 +116,7 @@
 }
 
 h3.comment-title {
+    font-weight: bold;
     height: 40px;
     line-height: 37px;
     font-size: 14px;
@@ -125,10 +126,28 @@ h3.comment-title {
 }
 
 .comments-list {
-    height: 50px;
+    height: auto;
     font-size: 13px;
     margin: 10px 5px 10px 5px;
     color: #555;
+
+}
+
+ul.comments-holder-ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+ul.comments-holder-ul li.comment-holder {
+    list-style-type: none;
+    background: #fffff5;
+    height: 50px;
+    width: auto;
+    margin: 5px 0 5px 0;
     border: 1px solid #e1e1e1;
 }
 
