@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
     <title>原力與你同在</title>
     <link rel="stylesheet" href="./css/video.css">
@@ -32,86 +32,99 @@
 </head>
 
 <body id="body">
-    <h1 style="width: 95%; height: 100px; margin: 0px auto; line-height: 100px">原力與你同在</h1>
-    <div class="blook">
-        <ul id="flexiselDemo3">
-            <li>
-                <img src="./pic/香腸.jpg" class="pic" />
-            </li>
-            <li>
-                <img src="./pic/竹筒飯.jpg" class="pic" />
-            </li>
-            <li>
-                <img src="./pic/南投.jpg" class="pic" />
-            </li>
-            <li>
-                <img src="./pic/logo.jpg" class="pic" />
-            </li>
-            <!-- items mirrored twice, total of 12 -->
-        </ul>
+<h1 style="width: 95%; height: 100px; margin: 0px auto; line-height: 100px">原力與你同在</h1>
+<div class="blook">
+    <ul id="flexiselDemo3">
+        <li>
+            <img src="./pic/香腸.jpg" class="pic"/>
+        </li>
+        <li>
+            <img src="./pic/竹筒飯.jpg" class="pic"/>
+        </li>
+        <li>
+            <img src="./pic/南投.jpg" class="pic"/>
+        </li>
+        <li>
+            <img src="./pic/logo.jpg" class="pic"/>
+        </li>
+        <!-- items mirrored twice, total of 12 -->
+    </ul>
+</div>
+<div class="container-fluid block_color">
+
+
+    <br>
+    <div id="toolbar" name="工具列">
+        <nav id="log_pic">
+            <img src="./pic/logo.jpg" id="logo">
+        </nav>
+        <nav id="logo_div" class="htoolbar">
+            <p>
+
+                <a href="index.html">回首頁</a> |
+                <a href="food.html">美食區</a> |
+                <a href="video.html">影片區</a> |
+                <a href="play.html">導覽區</a>
+            </p>
+
+        </nav>
+
+        <nav id="lang" class="htoolbar">
+            <p>
+                <a href="" class="">English</a> |
+                <a href="" class="">日本語</a>
+            </p>
+
+        </nav>
+
     </div>
-    <div class="container-fluid block_color">
+    <br>
+
+    <br>
+    <br>
 
 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-        <br>
-        <div id="toolbar" name="工具列">
-            <nav id="log_pic">
-                <img src="./pic/logo.jpg" id="logo">
-            </nav>
-            <nav id="logo_div" class="htoolbar">
-                <p>
+    <div id="play" class="blook2 col-sm-12">
 
-                    <a href="index.html">回首頁</a> |
-                    <a href="food.html">美食區</a> |
-                    <a href="video.html">影片區</a> |
-                    <a href="play.html">導覽區</a>
-                </p>
-
-            </nav>
-
-            <nav id="lang" class="htoolbar">
-                <p>
-                    <a href="" class="">English</a> |
-                    <a href="" class="">日本語</a>
-                </p>
-
-            </nav>
-
-        </div>
-        <br>
-
-        <br>
-        <br>
-        
-
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-        <div id="play" class="blook2 col-sm-12">
-
-            <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">烹調</a>
             <a href="#">風景</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>
         </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntr-mUvOuoc" frameborder="0" gesture="media"
+                allow="encrypted-media" allowfullscreen></iframe>
 
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntr-mUvOuoc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="wrapper">
+            <div class="page-data">
+                Subject here
+            </div>
+            <div class="command-wrapper">
+                <h3 class="comment-title">User feedback...</h3>
+                <div class="comments-list"></div>
+            </div>
         </div>
+
     </div>
 
-    <hr>
 
-    <!--「日期特效-文字時鐘」程式碼的開始 -->
 
-    <script language="JavaScript">
+</div>
+
+<hr>
+
+<!--「日期特效-文字時鐘」程式碼的開始 -->
+
+<script language="JavaScript">
 
     <!--
     document.write('<div align="center"><font size="2">');
     document.write("<span id='clock'></span>");
     var now, hours, minutes, seconds, timeValue;
+
     function showtime() {
         now = new Date();
         hours = now.getHours();
@@ -124,13 +137,14 @@
         clock.innerHTML = timeValue;
         setTimeout("showtime()", 100);
     }
+
     showtime();
     document.write('</font></div>');
     //-->
-    </script>
-    <hr>
+</script>
+<hr>
 
-    <!--「日期特效-文字時鐘」程式碼的結束 -->
+<!--「日期特效-文字時鐘」程式碼的結束 -->
 </body>
 
 </html>

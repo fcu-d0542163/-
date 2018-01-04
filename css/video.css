@@ -23,12 +23,12 @@
     margin: 0px auto;
 }
 
-    .blook2 iframe {
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
+.blook2 iframe {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 
 .menuBlock {
     position: relative;
@@ -37,13 +37,12 @@
     top: 100px;
 }
 
-    .menuBlock li {
-        list-style-type: none;
-        text-decoration: none;
-        height: 20px;
-        margin-left: 0px;
-    }
-
+.menuBlock li {
+    list-style-type: none;
+    text-decoration: none;
+    height: 20px;
+    margin-left: 0px;
+}
 
 .sidenav {
     opacity: 0.9;
@@ -59,36 +58,80 @@
     padding-top: 60px;
 }
 
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
 
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
 
-        .sidenav a {
-            font-size: 18px;
-        }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
+.wrapper {
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    border: 1px solid #a1a1a1;
+    margin: 10px auto 10px auto;
+    height: 600px;
+    top: 350px;
+    left: 340px;
+}
+
+.page-data {
+    width: auto;
+    height: 50px;
+    color: #666;
+    margin: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.command-wrapper {
+    margin: 10px;
+    border: 1px solid #e1e1e1;
+    height: auto;
+    width: auto;
+}
+
+h3.comment-title {
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    margin: 0 5px 0 5px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.comments-list {
+    height: 50px;
+    font-size: 13px;
+    margin: 10px 5px 10px 5px;
+    color: #555;
+    border: 1px solid #e1e1e1;
+}
+
 .blook2 .sidenav {
     display: inline-block;
 }
@@ -130,6 +173,7 @@
     height: 40px;
     float: left;
 }
+
 /***************/
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
     display: none;
@@ -162,7 +206,7 @@
     width: 100%;
     background: #fcfcfc;
     background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
-    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #eee)); /* Chrome,Safari4+ */
     background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
     background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
     background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
@@ -182,13 +226,13 @@
     line-height: 0px;
 }
 
-    .nbs-flexisel-item img {
-        max-width: 100%;
-        cursor: pointer;
-        position: relative;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.nbs-flexisel-item img {
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /*** Navigation ***/
 
@@ -203,7 +247,7 @@
     z-index: 4;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
@@ -211,25 +255,26 @@
     left: 10px;
 }
 
-    .nbs-flexisel-nav-left:before {
-        content: "<"
-    }
+.nbs-flexisel-nav-left:before {
+    content: "<"
+}
 
-    .nbs-flexisel-nav-left.disabled {
-        opacity: 0.4;
-    }
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}
 
 .nbs-flexisel-nav-right {
     right: 5px;
 }
 
-    .nbs-flexisel-nav-right:before {
-        content: ">"
-    }
+.nbs-flexisel-nav-right:before {
+    content: ">"
+}
 
-    .nbs-flexisel-nav-right.disabled {
-        opacity: 0.4;
-    }
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
+
 /**************沒時區****************/
 .linkblock {
     width: 70px;
