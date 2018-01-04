@@ -145,6 +145,9 @@ ul.comments-holder-ul {
 }
 
 ul.comments-holder-ul li.comment-holder {
+
+
+    transition: border-color .30s;
     position: relative;
     list-style-type: none;
     background: #fffff5;
@@ -153,6 +156,10 @@ ul.comments-holder-ul li.comment-holder {
     margin: 10px 0 5px 0;
     border: 1px solid #e1e1e1;
     overflow: hidden;
+}
+
+ul.comments-holder-ul li.comment-holder:hover {
+    border: 1px solid black;
 }
 
 ul.comments-holder-ul li.comment-holder:hover {
@@ -170,6 +177,10 @@ ul.comments-holder-ul li.comment-holder .user-img {
 ul.comments-holder-ul li.comment-holder .user-img img.user-img-pic {
     max-width: 100%;
     max-height: 100%;
+}
+
+ul.comments-holder-ul li.comment-holder .user-img img.user-img-pic:hover {
+
 }
 
 ul.comments-holder-ul li.comment-holder h3.username-field {
@@ -193,7 +204,12 @@ ul.comments-holder-ul li.comment-holder .comment-text {
     width: auto;
 }
 
+ul.comments-holder-ul li.comment-holder:hover .comment-buttons-holder {
+    display: block;
+}
+
 .comment-buttons-holder {
+    display: none;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -202,7 +218,7 @@ ul.comments-holder-ul li.comment-holder .comment-text {
 }
 
 .comment-buttons-holder ul {
-    display: none;
+
     list-style-type: none;
     width: auto;
     height: auto;
@@ -220,7 +236,7 @@ ul.comments-holder-ul li.comment-holder .comment-text {
     cursor: pointer;
 }
 
-.comment-buttons-holder ul li:hover{
+.comment-buttons-holder ul li:hover {
     color: white;
     background: black;
 }
