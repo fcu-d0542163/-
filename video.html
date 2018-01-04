@@ -11,9 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/slideMenu.js"></script>
-
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script>
         $(window).load(function () {
@@ -27,6 +25,25 @@
                 }
             });
         });
+    </script>
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $.ajax({
+                origin: "*",
+                type: "POST",
+                url: 'https://jayonweb.000webhostapp.com/test.php',
+                data: {}, //send data if needed
+                success: function () {
+                    alert("Success!");
+                }
+            });
+        })
+
+
     </script>
 
 </head>
@@ -104,43 +121,6 @@
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
-                        <li class="comment-holder" id="_1">
-                            <div class="user-img">
-                                <img src="pic/icon.png" class="user-img-pic">
-                            </div>
-                            <div class="comment-body">
-                                <h3 class="username-field">JayonV</h3>
-                                <div class="comment-text">The comment here...
-                                    good season today's!
-                                    good season today's!good season today's!
-                                    good season today's!
-                                    good season today's!
-                                    good season today's!
-                                    good season today's!
-                                    good season today's!<br>
-                                </div>
-                            </div>
-
-                            <div class="comment-buttons-holder">
-                                <ul>
-                                    <li class="delete-btn">&times</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="comment-holder" id="_2">
-                            <div class="user-img">
-                                <img src="pic/icon.png" class="user-img-pic">
-                            </div>
-                            <div class="comment-body">
-                                <h3 class="username-field">JayonV</h3>
-                                <div class="comment-text">The comment here...</div>
-                            </div>
-                            <div class="comment-buttons-holder">
-                                <ul>
-                                    <li class="delete-btn">&times</li>
-                                </ul>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
