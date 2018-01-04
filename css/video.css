@@ -128,7 +128,7 @@ h3.comment-title {
 .comments-list {
     height: auto;
     font-size: 13px;
-    margin: 10px 5px 5px 5px;
+    margin: 0 5px 5px 5px;
     color: #555;
 
 }
@@ -147,7 +147,7 @@ ul.comments-holder-ul li.comment-holder {
     background: #fffff5;
     height: auto;
     width: auto;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
     border: 1px solid #e1e1e1;
     overflow: hidden;
 }
