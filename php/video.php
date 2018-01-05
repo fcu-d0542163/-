@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php header("Access-Control-Allow-Origin: *"); ?>
+<?php require_once phpStore . 'defines.php'; ?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -118,9 +120,7 @@
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
-                        <script>
-                            $(".comments-holder-ul").load('https://jayonweb.000webhostapp.com/May-the-Force-be-with-you/comment_box.php');
-                        </script>
+                        <?php require_once phpStore . 'comment_box.php'; ?>
                     </ul>
                 </div>
             </div>
