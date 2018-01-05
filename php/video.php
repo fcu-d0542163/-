@@ -1,5 +1,4 @@
 ﻿<?php header("Access-Control-Allow-Origin: *"); ?>
-<?php require_once phpStore . 'defines.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -120,7 +119,7 @@
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
-                        <?php require_once phpStore . 'comment_box.php'; ?>
+                        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/comment_box.php'; ?>
                     </ul>
                 </div>
             </div>
