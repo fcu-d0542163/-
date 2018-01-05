@@ -1,7 +1,6 @@
 ﻿<?php header("Access-Control-Allow-Origin: *"); ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8"/>
 
@@ -119,6 +118,7 @@
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
+                        <?php $comments = array("a", "b", "c", "d"); ?>
                         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/comment_box.php'; ?>
                     </ul>
                 </div>
