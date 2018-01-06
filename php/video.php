@@ -116,6 +116,7 @@
             <div class="page-data">Comment Area</div>
             <div class="command-wrapper">
                 <h3 class="comment-title">Video feedback</h3>
+                <div class="comment-insert"></div>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
                         <?php $comments = array("a", "b", "c", "d"); ?>

@@ -1,3 +1,5 @@
+@import url('comment_insert.css');
+
 #body {
     background-color: rgb(231, 240, 248);
     font-family: Microsoft JhengHei;
@@ -239,7 +241,7 @@ ul.comments-holder-ul li.comment-holder:hover .comment-buttons-holder {
 
 .comment-buttons-holder ul li:hover {
     color: white;
-    background: black;
+    background: green;
 }
 
 .blook2 .sidenav {
