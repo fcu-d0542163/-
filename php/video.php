@@ -13,7 +13,7 @@
     <script src="js/slideMenu.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    <script type="text/javascript" src="js/comment_insert.js"></script>
+    <script type="text/javascript" src="js/comment_insert.js?t=<?php echo time() ?>"></script>
     <script>
         $(window).load(function () {
             $("#flexiselDemo3").flexisel({
