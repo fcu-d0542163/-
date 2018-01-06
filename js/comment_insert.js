@@ -15,12 +15,12 @@ $(document).ready(function () {
                     comment: _comment
                 }
             )
-                .success(
+                .done(
                     function (data) {
                         console.log("ResponseText: " + data);
                     }
                 )
-                .error(
+                .fail(
                     function () {
                         console.log("Error");
                     }
