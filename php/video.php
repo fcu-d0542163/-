@@ -13,6 +13,7 @@
     <script src="js/slideMenu.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="js/comment_insert.js"></script>
     <script>
         $(window).load(function () {
             $("#flexiselDemo3").flexisel({
@@ -42,7 +43,12 @@
             });
         })*/
     </script>
-
+    <!--banned advertise-->
+    <script>
+        $(document).ready(function () {
+            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+        });
+    </script>
 </head>
 
 <body id="body">
@@ -117,9 +123,12 @@
             <div class="command-wrapper">
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comment-insert">
-                    <h3 class="who-says">Says: Sammy.D</h3>
+                    <h3 class="who-says"><span>Says:</span> Sammy.D</h3>
                     <div class="comment-insert-container">
-                        <textarea class="comment-insert-text"></textarea>
+                        <textarea id="comment-post-text" class="comment-insert-text"></textarea>
+                    </div>
+                    <div id="comment-post-btn" class="comment-post-btn-wrapper">
+                        Post
                     </div>
                 </div>
                 <div class="comments-list">
@@ -130,7 +139,8 @@
                 </div>
             </div>
         </div>
-
+        <input type="hidden" id="userId" value="1"/>
+        <input type="hidden" id="userName" value="jayonv"/>
     </div>
 
 
