@@ -1,4 +1,5 @@
 ﻿<?php header("Access-Control-Allow-Origin: *"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/defines.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -134,7 +135,7 @@
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
                         <?php $comments = array("a", "b", "c", "d"); ?>
-                        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/comment_box.php'; ?>
+                        <?php require_once WebDir . 'comment_box.php'; ?>
                     </ul>
                 </div>
             </div>
