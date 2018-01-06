@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_POST['task']) && $_POST['task'] == 'comment_insert') {
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/defines.php';
     $userId = (int)$_POST['userId'];
     $comment = addslashes(str_replace("\n", "<br>", $_POST['comment']));
 
@@ -14,7 +15,10 @@ if (isset($_POST['task']) && $_POST['task'] == 'comment_insert') {
     require_once phpRoot . 'comments.php';
 
     if (class_exists('Comments')) {
-        Comments::insert($comment_txt, $userId);
+        $commentInfo = Comments::insert($comment, $userId);
+        if ($commentInfo != null) {
+
+        }
     }
 
 

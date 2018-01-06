@@ -25,6 +25,6 @@ class Comments
 
     public static function delete($commentId)
     {
-        
+
     }
 }
