@@ -135,7 +135,7 @@
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
                         <?php $comments = array("a", "b", "c", "d"); ?>
-                        <?php require_once WebDir . 'comment_box.php'; ?>
+                        <?php require_once phpRoot . 'comment_box.php'; ?>
                     </ul>
                 </div>
             </div>
