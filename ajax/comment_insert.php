@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_POST['task']) && $_POST['task'] == 'comment_insert') {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/defines.php';
     $userId = (int)$_POST['userId'];
@@ -9,14 +8,7 @@ if (isset($_POST['task']) && $_POST['task'] == 'comment_insert') {
     $std->comment = null;
     $std->error = false;
 
-    /*
-    $std = new stdClass();
-    $std->comment_id = 24;
-    $std->userId = $userId;
-    $std->comment = $comment;
-    $std->userName = "JayonV";
-    $std->profile_img = "/May-the-Force-be-with-you/pic/icon.png";
-    */
+
 
     require_once phpRoot . 'comments.php';
 

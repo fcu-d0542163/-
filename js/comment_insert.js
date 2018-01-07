@@ -47,13 +47,13 @@ function comment_insert(data) {
 
     var t = '';
 
-    t += '<li class="comment-holder" id="_' + data.comment.comment_id + '">';
+    t += '<li class="comment-holder" id="_' + data.comment_id + '">';
     t += '<div class="user-img">';
-    t += '<img src="' + data.user.profile_img + '" class="user-img-pic">';
+    t += '<img src="' + data.profile_img + '" class="user-img-pic">';
     t += '</div>';
     t += '<div class="comment-body">';
-    t += '<h3 class="username-field">' + data.user.userName + '</h3>';
-    t += '<div class="comment-text">' + data.comment.comment + '</div>';
+    t += '<h3 class="username-field">' + data.userName + '</h3>';
+    t += '<div class="comment-text">' + data.comment + '</div>';
     t += '</div>';
 
     t += '<div class="comment-buttons-holder">';
