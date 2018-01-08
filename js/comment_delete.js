@@ -16,6 +16,6 @@ function comment_delete(_comment_id) {
             task: "comment_delete",
             comment_id: _comment_id
         }).done(function (data) {
-        console.log("Success on the comment_ delete");
+        $('#_' + _comment_id).detach();
     });
 }

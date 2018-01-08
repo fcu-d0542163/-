@@ -1,7 +1,7 @@
 <?php if (isset($GLOBALS['comments']) && is_array($comments)) ; ?>
 <?php foreach ($comments as $key => $comment): ?>
     <?php $user = Subscribers::getSubscriber($comment->userId); ?>
-    <li class="comment-holder" id="_1=<?php echo $comment->comment_id; ?>">
+    <li class="comment-holder" id="_<?php echo $comment->comment_id; ?>">
         <div class="user-img">
             <img src="<?php echo $user->profile_img; ?>" class="user-img-pic">
         </div>
