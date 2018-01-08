@@ -51,6 +51,13 @@ class Comments
 
     public static function delete($commentId)
     {
+        $sql = "delete from comments where comment_id = $$commentId";
 
+        $query = mysqli_query(callHost(), $sql);
+
+        if ($query) {
+            return true;
+        }
+        return null;
     }
 }
