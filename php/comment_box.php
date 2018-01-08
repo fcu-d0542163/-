@@ -1,42 +1,19 @@
+<?php if (isset($GLOBALS['comments']) && is_array($comments)) ; ?>
 <?php foreach ($comments as $key => $comment): ?>
-    <li class="comment-holder" id="_1">
+    <?php $user = Subscribers::getSubscriber($comment->userId); ?>
+    <li class="comment-holder" id="_1=<?php echo $comment->comment_id; ?>">
         <div class="user-img">
-            <img src="pic/icon.png" class="user-img-pic">
+            <img src="<?php echo $user->profile_img; ?>" class="user-img-pic">
         </div>
         <div class="comment-body">
-            <h3 class="username-field">JayonV</h3>
-            <div class="comment-text">The comment here...
-                good season today's!
-                good season today's!good season today's!
-                good season today's!
-                good season today's!
-                good season today's!
-                good season today's!
-                good season today's!<br>
-            </div>
+            <h3 class="username-field"><?php echo $user->userName; ?></h3>
+            <div class="comment-text"><?php echo $comment->comment; ?></div>
         </div>
 
         <div class="comment-buttons-holder">
             <ul>
-                <li class="delete-btn">&times</li>
+                <li id="<?php echo $comment->comment_id; ?>" class="delete-btn">&times</li>
             </ul>
         </div>
     </li>
 <?php endforeach; ?>
-<!--
-<li class="comment-holder" id="_2">
-    <div class="user-img">
-        <img src="pic/icon.png" class="user-img-pic">
-    </div>
-    <div class="comment-body">
-        <h3 class="username-field">JayonV</h3>
-        <div class="comment-text">The comment here...</div>
-    </div>
-    <div class="comment-buttons-holder">
-        <ul>
-            <li class="delete-btn">&times</li>
-        </ul>
-    </div>
-</li>
-
--->

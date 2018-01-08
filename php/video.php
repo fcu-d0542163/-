@@ -1,6 +1,6 @@
 ﻿<?php header("Access-Control-Allow-Origin: *"); ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/defines.php'; ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/comments.php'; ?>
+<?php require_once phpRoot . 'comments.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +16,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script type="text/javascript" src="js/comment_insert.js?t=<?php echo time() ?>"></script>
+    <script type="text/javascript" src="js/comment_delete.js?t=<?php echo time() ?>"></script>
     <script>
         $(window).load(function () {
             $("#flexiselDemo3").flexisel({
