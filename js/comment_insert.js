@@ -57,10 +57,11 @@ function comment_insert(data) {
     t += '</div>';
     t += '<div class="comment-buttons-holder">';
     t += '<ul>';
-    t += '<li class="delete-btn">&times</li>';
+    t += '<li id="' + data.comment.comment_id + '" class="delete-btn">&times</li>';
     t += '</ul>';
     t += '</div>';
     t += '</li>';
 
     $('.comments-holder-ul').prepend(t);
+    add_delete_handlers();
 }
