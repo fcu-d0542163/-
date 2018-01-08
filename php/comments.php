@@ -9,7 +9,20 @@ class Comments
 
     public static function getComments()
     {
+        $output = array();
 
+        $sql = "SELECT * FROM comments ORDER BY comment_id DESC";
+
+        $query = mysqli_query(callHost(), $sql);
+
+        if ($query) {
+            if (mysqli_num_rows($query) > 0) {
+                while ($row = mysqli_fetch_object($query)) {
+                    $output[] = $row;
+                }
+            }
+        }
+        return $output;
     }
 
     public static function insert($comment_txt, $userId)
