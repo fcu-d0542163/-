@@ -10,19 +10,20 @@ body{
     margin:0px auto;
 }
 #header{
-    
+
 }
 #toolbar{
     background-color: rgb(78, 173, 173);
     width:95%;
     height: 50px;
     margin:0px auto;
-   
+
 }
 .htoolbar{
     color: rgb(4, 4, 158);
     font-size: 20px;
-    
+    font-style: inherit;
+    text-decoration: none;
 }
 .NaviAllign {
     height:auto;
@@ -50,8 +51,8 @@ body{
     top: 21px;
     left: 91px;
     display:  block;
-	margin:auto;
-	font-family:Microsoft JhengHei;
+    margin:auto;
+    font-family:Microsoft JhengHei;
 }
 
 #toright {
