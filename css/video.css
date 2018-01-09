@@ -99,8 +99,10 @@
     border: 1px solid #a1a1a1;
     margin: 10px auto 10px auto;
     height: 600px;
-    top: 350px;
-    left: 340px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top:350px;
 }
 
 .page-data {
