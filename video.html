@@ -1,13 +1,10 @@
-﻿<?php header("Access-Control-Allow-Origin: *"); ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/May-the-Force-be-with-you/php/defines.php'; ?>
-<?php require_once phpRoot . 'comments.php'; ?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
 
     <title>原力與你同在</title>
-    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="./css/video.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,8 +12,7 @@
     <script src="js/slideMenu.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    <script type="text/javascript" src="js/comment_insert.js?t=<?php echo time() ?>"></script>
-    <script type="text/javascript" src="js/comment_delete.js?t=<?php echo time() ?>"></script>
+
     <script>
         $(window).load(function () {
             $("#flexiselDemo3").flexisel({
@@ -126,7 +122,7 @@
             <div class="command-wrapper">
                 <h3 class="comment-title">Video feedback</h3>
                 <div class="comment-insert">
-                    <h3 class="who-says"><span>Says:</span> anonymous</h3>
+                    <h3 class="who-says"><span>Says:</span> Sammy.D</h3>
                     <div class="comment-insert-container">
                         <textarea id="comment-post-text" class="comment-insert-text"></textarea>
                     </div>
@@ -136,8 +132,7 @@
                 </div>
                 <div class="comments-list">
                     <ul class="comments-holder-ul">
-                        <?php $comments = Comments::getComments(); ?>
-                        <?php require_once phpRoot . 'comment_box.php'; ?>
+
                     </ul>
                 </div>
             </div>

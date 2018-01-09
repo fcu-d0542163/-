@@ -1,5 +1,6 @@
 .comment-insert {
 
+    position: relative;
     height: 150px;
     width: auto;
     margin: 10px;
@@ -40,13 +41,19 @@
 
 .comment-post-btn-wrapper {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 2px;
+    right: 12px;
     width: 60px;
     height: 25px;
-    line-height: 22px;
+    line-height: 24px;
     background: #6989cc;
     color: #ffffff;
-    font-size: 14px;;
+    font-size: 14px;
     text-align: center;
+    cursor: pointer;
+}
+
+.comment-post-btn-wrapper:hover {
+    background: #5e7bb8;
+    color: #eaeaea;
 }
