@@ -1,0 +1,105 @@
+.cycle-slideshow {
+    margin-left: 100px;
+    position: relative;
+    width: 960px;
+    height: 300px;
+    max-height: 100%;
+    overflow: hidden;
+}
+.cycle-slideshow img {
+        position: absolute;
+        margin-left: 100px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+#nature-picture{
+	
+	position: relative;
+        margin-left: 50px;
+        width: 300px;
+		height: 480px;
+		margin-top: 100px;
+		margin-left: 300px;
+		
+	
+}
+#toolbar {
+    background-color: rgb(78, 173, 173);
+    width: 100%;
+    height: 90px;
+    margin-top: 80px;
+}
+#logo_div {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    top: -60px;
+}
+#lang {
+    display: inline-block;
+    position: relative;
+	
+    width: 17%;
+    height: 26px;
+    float: right;
+    top: -70px;
+	
+}
+#logo {
+    width:60px;
+	height: 80px;
+	
+    top: -50px;
+    margin-right: 1000px;
+}
+#travelbox{
+	
+}
+#travel{
+	display:inline-block;
+	
+	position: relative;
+	margin-left: 300px;
+	top: 20px;
+}
+#plan{
+	display:inline-block;
+	
+	position: relative;
+	margin-left: 300px;
+	top: 20px;
+}
+#test{
+	display:inline-block;
+	
+	position: relative;
+	margin-left: 260px;
+	top: 20px;
+}
+.leftBar {
+    position: fixed;
+    left:0;
+}
+
+    .leftBar ul {
+
+        text-align: center;
+        margin-top: 100px;
+        padding-left: inherit;
+        border: 1px solid black;
+        width: 60px;
+        height: 1000px;
+        background-color: burlywood;
+
+    }
+.htoolbar {
+    color: rgb(4, 4, 158);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.CmdBox {
+    position: relative;
+    left: 300px;
+    top: 150px;
+}

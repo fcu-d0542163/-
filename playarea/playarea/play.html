@@ -1,0 +1,158 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="play_toolbar.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery.cycle2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+$(document).ready(function(){
+ $("#coll").change(function(){
+ var day1_1 = "<div>武界部落人文生態巡禮→武界吊橋→舊武界壩→曲冰隧道→松林舊部落→親愛部落</div>";
+ var day1_2 = "<div> 曲冰部落巡禮→曲冰遺址</div>";
+ var day1_3 = "<div> 地利村達瑪巒部落→雙龍部落巡禮→黑黑王國→巴庫拉斯部落探索</div>";
+ var day2_1 = "<div>望鄉部落巡禮→乜寇豆類媽媽的故事→眺望東谷飛沙→獵人古道生態體驗</div>";
+ var day2_2 = "<div>東埔部落巡禮→羅娜部落巡禮→八通關古道生態體驗→東埔溫泉</div>";
+ var startTag;
+ var endTag;
+ var listType;
+ 
+	if(coll.value== 0){
+		$("#test").empty();
+		
+	}else if(coll.value== 1){
+		startTag = "<ol style='list-style-type:none'>";
+		endTag = "<ol>";
+		 
+		$("#test").empty();
+		for(var i=1 ; i<=3;i++){
+			switch(i){
+				case 1:
+					$("#test").append(startTag+'<li>第'+i+'天</li>'+day1_1+endTag);
+					break;
+				case 2:
+					$("#test").append(startTag+'<li>第'+i+'天</li>'+day1_2+endTag);
+					break;
+				case 3:
+					$("#test").append(startTag+'<li>第'+i+'天</li>'+day1_3+endTag);
+					break;
+			}
+			
+		}
+		
+	}else if(coll.value== 2){
+		startTag = "<ol style='list-style-type:none'>";
+		endTag = "<ol>";
+		
+		$("#test").empty();
+		for(var i=1 ; i<=3;i++){
+			switch(i){
+				case 1:
+					$("#test").append(startTag+'<li>第'+i+'天</li>'+day2_1+endTag);
+					break;
+				case 2:
+					$("#test").append(startTag+'<li>第'+i+'天</li>'+day2_2+endTag);
+					break;
+				
+			}
+			
+		}
+	}
+ })
+});
+</script>
+	
+	
+	
+
+	<div class="cycle-slideshow"
+        data-cycle-fx="scrollHorz"
+        data-cycle-speed="1000"
+        data-cycle-timeout="5000">
+        <img src="slider-1.jpg" />
+        <img src="slider-2.jpg" />
+        <img src="slider-3.jpg" />
+        <img src="slider-4.jpg" />
+    </div>
+	
+	
+
+	<div id="toolbar" name="工具列" class=jumbotron>
+
+
+        <img src="logo.jpg" id="logo">
+        <nav id="logo_div">
+            <a href="index.html" class="htoolbar">回首頁</a> |
+            <a href="food.html" class="htoolbar">美食區</a> |
+            <a href="video.html" class="htoolbar">影片區</a> |
+            <a href="play.html" class="htoolbar">導覽區</a>
+
+
+        </nav>
+
+        <nav id="lang" class="htoolbar">
+
+            <a href="" class="htoolbar">English</a> |
+                <a href="" class="htoolbar">日本語</a>
+
+
+        </nav>
+
+    </div>
+	
+	
+	<div class="leftBar">
+        <ul>
+            <li class="height"><a href="" class="underline">烹調</a></li>
+            <li><a href="" class="underline">風景</a></li>
+            <li><a href="" class="underline"></a></li>
+
+
+        </ul>
+
+    </div>
+
+<div class="container">
+	<div id="travelbox" class=jumbotron>
+	<div id="travel">
+		<p>請選擇行程</p>
+		<select id="coll">
+		<option value="0" id="no">請選擇</option>
+		<option value="2">兩日遊</option>
+		<option value="1">三日遊</option>
+		</select>
+	</div>
+	<div id="plan"></div>
+	
+	<div id = "test"></div>
+	</div>
+	<div class="nature">
+        <img src="nature-1.jpg" id="nature-picture">
+        
+    </div>
+</div>	
+	<div class="CmdBox">
+        <form method="post">
+            <label>Name:
+                <br>
+                <input type="text" name="name" /><br>
+            </label>
+            <label>Message:
+                <br>
+                <textarea cols="30" rows="10" name="comment"></textarea></label><br>
+            <input type="submit" name="post" value="Post" />
+        </form>
+    </div>
+</body>
