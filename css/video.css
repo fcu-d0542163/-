@@ -92,6 +92,7 @@
 }
 
 .wrapper {
+    overflow: scroll;
     position: absolute;
     background: #fff;
     width: 500px;
@@ -387,7 +388,7 @@ ul.comments-holder-ul li.comment-holder:hover .comment-buttons-holder {
     opacity: 0.4;
 }
 
-/**************沒時區****************/
+/**************æ²’æ™‚å€****************/
 .linkblock {
     width: 70px;
     height: 100%;
