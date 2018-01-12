@@ -4,6 +4,7 @@
     /*color: rgb(4, 4, 158);*/
 }
 .foodDetail{
+	width: 302px;
 	position:relative;
 	border:1px solid black;
 }
