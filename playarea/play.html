@@ -4,14 +4,34 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="play_toolbar.css">
     <script src="jquery-3.2.1.js"></script>
-    <script src="jquery.cycle2.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+    <script>
+        $(window).load(function () {
+            $("#flexiselDemo3").flexisel({
+                visibleItems: 3,
+                itemsToScroll: 1,
+                autoPlay: {
+                    enable: true,
+                    interval: 5000,
+                    pauseOnHover: true
+                }
+            });
+        });
+    </script>
+    <!--banned advertise-->
+    <script>
+        $(document).ready(function () {
+            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+        });
+    </script>
 	<a id="top"></a>
     <style type="text/css">
         .auto-style1 {
@@ -39,29 +59,28 @@ width: 100%;
     </style>
 	
 </head>
-<body >
+<body id="body">
 
-<script>
-</script>
-	
-	
-	
 
-	<div class="cycle-slideshow"
-        data-cycle-fx="scrollHorz"
-        data-cycle-speed="1000"
-        data-cycle-timeout="5000">
-        <img src="北部\寒溪神社.jpg" />
-        <img src="北部\南澳部落.jpg" />
-		<img src="中部\黑黑谷瀑布.jpg" />
-		<img src="中部\羅娜部落.png" />
-		<img src="東部\池南部落.jpg" />
-		<img src="東部\森榮部落.jpg" />
-		<img src="南部\高士部落.jpg" />
-		<img src="南部\三地門部落.jpg" />
+	<div class="blook " name = "跑馬燈">
+        <ul id="flexiselDemo3">
+            <li>
+                <img src="../pic/香腸.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="../pic/竹筒飯.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="../pic/南投.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="../pic/logo.jpg" class="pic" />
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+        </ul>
     </div>
 	
-	
+<div id="pic_block" class="container-fluid block_color">	
 
 <div id="toolbar" name="工具列">
         <nav id="log_pic">
@@ -84,12 +103,10 @@ width: 100%;
                 <a href="" class="htoolbar">日本語</a>
             </p>
 
-        </nav>
-
-		
+        </nav>		
     </div>
-<div id="background">
-<div id="travel">
+
+<div class="col-xs-12 block_color col-sm-6 inblock">
 	 <ul class="nav nav-tabs area" >
         
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">北部<span class="caret"></span></a>
@@ -126,7 +143,7 @@ width: 100%;
 	
     </ul> 
 	<div class="tab-content">
-		<div id="north-day2" class="tab-pane fade in">
+		<div id="north-day2" class="tab-pane fade in active">
             <h3>台灣山脊～遺世獨立部落行</h3>
             <span class="day">Day 1</span>
 			<p class="day-route">
@@ -567,7 +584,7 @@ width: 100%;
 	
 </div>	
 
-<div class="leftBar">
+<!--<div class="leftBar">
         <ul>
             <li class="height"><a href="" class="underline">烹調</a></li>
             <li><a href="" class="underline">風景</a></li>
@@ -577,34 +594,13 @@ width: 100%;
         </ul>
 
     </div>
-
-<!--
-<div class="container">
-	<div id="travelbox" class=jumbotron>
-	<div id="travel">
-		<p>請選擇行程</p>
-		<select id="coll">
-		<option value="0" id="no">請選擇</option>
-		<option value="2">兩日遊</option>
-		<option value="1">三日遊</option>
-		</select>
-	</div>
-	<div id="plan"></div>
-	
-	<div id = "test"></div>
-	</div>
-	<div class="nature">
-        <img src="nature-1.jpg" id="nature-picture">
-        
-    </div>
-</div>	
 -->
 	<br>
 	<br>
 	<br>
 	<br>
 	<div id = "test"></div>
-	<div class="CmdBox">
+	<div class="CmdBox block_color">
         <form method="post">
             <label>Name:			
                 <br><input type="text" name="name" /><br>			
@@ -616,13 +612,6 @@ width: 100%;
 				
 			</label><br>
                 
-			<!--<h2>Star Rating</h2>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star"></span>
-			<span class="fa fa-star"></span>
-			-->
             <input type="submit" name="post" value="Post" />
         </form>
     </div>
