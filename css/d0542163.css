@@ -10,7 +10,7 @@
 
 #three {
     position :relative;
-    height: 45px;*/
+    height: 45px;
     /*line-height: 50px;*/
     width: 414px;
     top: 300px;
@@ -20,9 +20,26 @@
 
 #four {
     position :relative;
-    height: 45px;*/
+    height: 45px;
     /*line-height: 50px;*/
     width: 414px;
     top: 255px;
     left: 815px;
+}
+.block_color{
+    background-color: rgb(206, 206, 206);
+    width:95%;
+    
+}#pic_block{
+    width: 55%;
+    margin:0px auto;
+}
+.ablock{
+    height: 25px;
+}
+.inblock{
+    margin:0px auto;
+    vertical-align : middle;
+    left: 0;
+    right: 0;
 }
