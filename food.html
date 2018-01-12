@@ -91,11 +91,13 @@
         <!-- 上面是工具列-->
         <div id="pic_block" class="block_color">
             <div class="col-xs-12 block_color col-sm-6 inblock" id="chcsoup" name="馬告機湯">
+                <h3>馬告雞湯</h3>
                 <a href="foodchickensoup.html">
                     <IMG SRC="chickensoup.jpg" WIDTH=300 HEIGHT=300> </a>
             </div>
 
             <div class="col-xs-12 block_color col-sm-6 inblock" id="toreci" name="竹筒飯">
+                <h3>竹筒飯</h3>
                 <a href="foodrice.html">
                     <IMG SRC="rice.jpg" WIDTH=300 HEIGHT=300>
                 </a>
@@ -104,17 +106,43 @@
             <div class = "ablock col-xs-12 col-sm-12"></div>
 
             <div class="col-xs-12 block_color col-sm-6 inblock" id="foodheart " name="排骨湯">
+                <H3>藤心排骨湯</H3>
                 <a href="foodheart.html" >
                     <IMG SRC="heartsoup.jpg" WIDTH=300 HEIGHT=300>
                 </a>
             </div>
             <div class="col-xs-12 block_color col-sm-6 inblock" id = "pork" name = "山豬肉">
+                <h3>山豬肉</h3>
                     <a href="foodmeet.html" >
                             <IMG SRC="monmeet.jpg" WIDTH=300 HEIGHT=300></a>
             </div>
+            <div class = "ablock col-xs-12 col-sm-12"></div>
         </div>
 
     </div>
+    <div class = "ablock col-xs-12 col-sm-12"></div>
+    <script language="JavaScript">
+            //<!--
+            document.write('<div align="center"><font size="2">');
+            document.write("<span id='clock'></span>");
+            var now, hours, minutes, seconds, timeValue;
+            function showtime() {
+                now = new Date();
+                hours = now.getHours();
+                minutes = now.getMinutes();
+                seconds = now.getSeconds();
+                timeValue = (hours >= 12) ? "PM " : "AM ";
+                timeValue += ((hours > 12) ? hours - 12 : hours) + " :";
+                timeValue += ((minutes < 10) ? " 0" : " ") + minutes + " :";
+                timeValue += ((seconds < 10) ? " 0" : " ") + seconds + " s";
+                clock.innerHTML = timeValue;
+                setTimeout("showtime()", 100);
+            }
+            showtime();
+            document.write('</font></div>');
+            //-->
+        </script>
+        <div class = "ablock col-xs-12 col-sm-12"></div>
 </body>
 
 </html>
