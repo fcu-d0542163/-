@@ -1,0 +1,151 @@
+.cycle-slideshow {
+    margin-left: -370px;
+    position: relative;
+    width: 960px;
+    height: 300px;
+    max-height: 100%;
+    overflow: hidden;
+	left:50%;
+}
+.cycle-slideshow img {
+        position: absolute;
+        margin-left: 100px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+#nature-picture{
+	
+	position: relative;
+        margin-left: 50px;
+        width: 300px;
+		height: 480px;
+		margin-top: 100px;
+		margin-left: 300px;
+		
+	
+}
+#toolbar {
+    background-color: #E6E6FA;
+    width: 100%;
+    height: 90px;
+    margin-top: 80px;
+}
+#logo_div {
+    display: inline-block;
+    position: relative;
+   
+	/*float:left*/
+    top: -40px;
+	left: 0%;
+
+	margin-left: 5px; 
+}
+#lang {
+    display: inline-block;
+    position: relative;
+    width: 17%;
+    height: 26px;
+    float: right;
+    top: -30px;
+	
+}
+#logo {
+	max-width:90px;
+	margin-top:-50px;
+	margin-left:10px;
+	position:relative;
+}
+
+#travelbox{
+	margin-right:100px;
+}
+#travel{
+	display:inline-block;
+	width: 100%;
+	position: relative;
+	left:100px;
+	
+	margin-left: -40px;
+	top: 20px;
+}
+
+#plan{
+	display:inline-block;
+	
+	position: relative;
+	margin-left: 300px;
+	top: 20px;
+}
+#test{
+	display:inline-block;
+	
+	position: relative;
+	margin-left: 260px;
+	top: 20px;
+}
+.day{
+	border-style: solid;
+	border-color: gray;
+	border-width: 2px; 
+	padding:3px;
+}
+.day-route{
+	margin-left:60px;
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	color:gray;
+}
+.context{
+}
+img{
+	
+}
+.leftBar {
+   
+position:fixed;
+left:-40px;
+top:100px;
+bottom:100px;
+height: 100px;
+width: 80px;
+margin-bottom: 200px;
+margin-top: 300px;
+background-color: #48D1CC;
+
+}
+	.leftBar ul li{
+		list-style:none;
+	}
+   /* .leftBar ul {
+
+        text-align: center;
+        margin-top: 100px;
+        padding-left: inherit;
+        border: 1px solid black;
+        width: 60px;
+        height: 1000px;
+        background-color: burlywood;
+
+    }*/
+.htoolbar {
+    color: rgb(4, 4, 158);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.CmdBox {
+    position: relative;
+    left:160px;
+    
+}
+#background{
+	background-color:#FFDAB9;
+	min-height:100%;
+	
+}
+#gotop{
+	left:50%;
+	bottom:0px;
+}
+
