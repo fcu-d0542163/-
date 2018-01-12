@@ -1,45 +1,101 @@
-
+<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="d0542163.css">
+    <meta charset="utf-8" />
+
+
+    <link rel="stylesheet" href="./css/d0542163.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script>
+        $(window).load(function () {
+            $("#flexiselDemo3").flexisel({
+                visibleItems: 3,
+                itemsToScroll: 1,
+                autoPlay: {
+                    enable: true,
+                    interval: 5000,
+                    pauseOnHover: true
+                }
+            });
+        });
+    </script>
+    <!--banned advertise-->
+    <script>
+        $(document).ready(function () {
+            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+        });
+    </script>
+
 </head>
 
-<body>
-<div id="toolbar" name="工具列">
+<body id="body">
 
- <img src="logo.jpg" id="logo">
-        <nav id="logo_div">
-            
-               
-                <a href="index.html" class="htoolbar">&emsp;&emsp;&emsp;回首頁</a> |
-                <a href="file:///C:/Users/user/Desktop/555/%E7%BE%8E%E9%A3%9F%E5%8D%80%20%E5%A4%96%E9%A0%81.html" class="htoolbar">美食區</a> |
-                <a href="video.html" class="htoolbar">影片區</a> |
-                <a href="play.html" class="htoolbar">導覽區</a>
-           
-
-        </nav>
-
-        <nav id="lang" class="htoolbar">
-            
-                <a href="" class="htoolbar">English</a> |
-                <a href="" class="htoolbar">日本語</a>
-            
-
-        </nav>
-
+    <div class="blook" name = "跑馬燈">
+        <ul id="flexiselDemo3">
+            <li>
+                <img src="./pic/香腸.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="./pic/竹筒飯.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="./pic/南投.jpg" class="pic" />
+            </li>
+            <li>
+                <img src="./pic/logo.jpg" class="pic" />
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+        </ul>
     </div>
-	<br>
-	<div style="text-align:center;" font size="10"><h1>山豬肉</h1></div>
-	
-<nav id="tomid">
- <IMG SRC="monmeet.jpg" WIDTH=400 HEIGHT=400 >
-</nav>
+    <div class="container-fluid block_color">
 
 
-<table id="tomid" style="text-align:center;" border="1">
-<tr>
-<td style="height:300px;width:300px;vertical-align:middle;">
 
+        <br>
+        <div id="toolbar" name="工具列">
+            <nav id="log_pic">
+                <img src="./pic/logo.jpg" id="logo">
+            </nav>
+            <nav id="logo_div" class="htoolbar">
+                <p>
+
+                    <a href="index.html" name = "首頁連結">回首頁</a> |
+                    <a href="food.html" name = "美食區連結">美食區</a> |
+                    <a href="phpDirect.html" name = "影片區連結">影片區</a> |
+                    <a href="play.html" name = "導覽區連結">導覽區</a>
+                </p>
+
+            </nav>
+
+            <nav id="lang" class="htoolbar">
+                <p>
+                    <a href="" class="htoolbar">English</a> |
+                    <a href="" class="htoolbar">日本語</a>
+                </p>
+
+            </nav>
+
+
+        </div>
+        <br>
+        <!-- 上面是工具列-->
+        <div id="pic_block" class="block_color">
+            <div class="col-xs-12 block_color col-sm-6 inblock" id = "pork" name = "山豬肉">
+                    <a href="foodmeet.html" >
+                           
+<div class="foodDetail">
+ <IMG SRC="monmeet.jpg" WIDTH=300 HEIGHT=300></a>
+ <br>
 五花肉一條、洋蔥適量、蒜末少許
 <br>
 醃料：醬油1/4匙、鹽少許、胡椒粉、蜂蜜少許
@@ -56,18 +112,14 @@
 <br><br>
 6、洋蔥切絲稍為泡水會比較脆口，放在盤底，將烤好的五花肉擺盤
 <br><br>
-7、最後將青蔥切絲配色(泡水會捲起來)</td>
+7、最後將青蔥切絲配色(泡水會捲起來)
+</div>
+            </div>
+            <div class = "ablock col-xs-12 col-sm-12"></div>
+        </div>
 
-</tr>
-</table>
-
-<br>
-
-
-
-</tr>
-</table>
-
-
+    </div>
+    
 </body>
+
 </html>

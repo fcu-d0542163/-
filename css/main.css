@@ -3,6 +3,11 @@
     font-family:Microsoft JhengHei;
     /*color: rgb(4, 4, 158);*/
 }
+.foodDetail{
+	position:relative;
+	border:1px solid black;
+}
+
 .block_color{
     background-color: rgb(206, 206, 206);
     width:95%;
